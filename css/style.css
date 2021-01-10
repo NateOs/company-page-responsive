@@ -225,8 +225,20 @@ footer p {
     }
 }
 
-@media only screen and (max-width: 1000px) {
-    
+@media only screen and (max-width: 600px) {
+
+    header {
+        height: 1300px;
+        min-height: 1300px;
+    }
+    .about h1 {
+        padding-top: 800px;
+    }
+    .members {
+        margin: 2em auto;
+        color: #202427;
+        flex-direction: column;
+    }
 }
 
 
