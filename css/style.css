@@ -118,7 +118,7 @@ header h1 {
 /*---about--*/
 .about {
     padding: 0 5%;
-    background-image: url(/images/about_back.png); /***fix this*/
+    background-image: url(/images/about_back.png);
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 50%;
@@ -140,7 +140,7 @@ header h1 {
 .call-to-action {
     text-align: center;
     padding: 20em 5% 20em 5%;
-    background-image: url(/images/cta_back.png); /***fix this***/
+    background-image: url(/images/cta_back.png);
     background-repeat: no-repeat;
     background-size: 40%;
     background-position: center;
@@ -172,4 +172,62 @@ footer p {
 }
 
 /*-----responsive---*/
+@media only screen and (max-width: 1000px) {
+    header {
+        height: 1300px;
+        min-height: 1300px;
+        padding: 0 2em;
+        background-image: url(/images/header_back_vert.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+    }
+    header h1 {
+        width: 100%;
+    }
+    /*----team-----*/
+    .team {
+        text-align: center;
+        margin: 3em 0 3em 0;
+        padding: 0 5%;
+        background-image:url(/images/teams_back.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 50%;
+    }
+    .team h1 {
+        width: 100%;
+    }
+    /*---about--*/
+    .about {
+        background-image: url(/images/about_back.png);
+        background-size: 90%;
+        height: 900px;
+        min-height: 900px;
+        overflow-y: visible;
+    }
+    .about h1 {
+        padding-top: 900px;
+    }
+    .about h1, .icons {
+        width:100%;
+        margin-left: 0;
+    }
+    .call-to-action {
+        margin-top: 25em;
+        padding: 15em 5% 15em 5%;
+    }
+    .footerPages {
+        display: none;
+    }
+    footer p {
+        margin: 2em auto;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    
+}
+
+
 
